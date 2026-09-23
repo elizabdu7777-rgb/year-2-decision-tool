@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Compare Year 2 winter production, sales, premises, machines and financing for Pork and Garlic Ice Cream Co."
+    />
+    <meta name="theme-color" content="#173f37" />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Pork and Garlic Ice Cream Year 2 Decision Tool</title>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to the decision tool</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Pork and Garlic Ice Cream home">
+        <span class="brand-mark" aria-hidden="true">PG</span>
+        <span>Pork &amp; Garlic Ice Cream Co.</span>
+      </a>
+      <nav aria-label="Page sections">
+        <a href="#position">Year 1 close</a>
+        <a href="#plans">Plans</a>
+        <a href="#decision">Decision</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-copy">
+          <p class="eyebrow">Year 2 winter decision tool</p>
+          <h1>Choose a winter plan before the market chooses for you.</h1>
+          <p class="hero-lede">
+            Compare operating choices, trainer sales allocations and financing side by side. Every number below can be
+            changed, and the profit and cash views update from the same rules.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#plans">Compare two plans</a>
+            <a class="button quiet" href="#reference-check">Check the Year 1 example</a>
+          </div>
+        </div>
+        <aside class="forecast-card" aria-label="Year 2 winter market forecast">
+          <p class="card-kicker">Known market forecast</p>
+          <p class="forecast-number">Sh <span id="forecast-value">410,000</span></p>
+          <p>Year 2 winter, all companies</p>
+          <div class="forecast-range">
+            <span id="forecast-low">328,000 low</span>
+            <span id="forecast-high">492,000 high</span>
+          </div>
+          <p class="microcopy">The trainer can run the market up to 20% below or above forecast. This is not a sales promise.</p>
+        </aside>
+      </section>
+
+      <section class="section-shell" id="position">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">01 Year 1 closing position</p>
+            <h2>Start from the resources you actually carry forward.</h2>
+          </div>
+          <p class="section-note">Yellow fields are editable. The starting figures use the official worked example from the rules; replace them with your team’s Year 1 autumn close.</p>
+        </div>
+        <div id="company-position"></div>
+      </section>
+
+      <section class="section-shell plans-shell" id="plans">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">02 Plan the season</p>
+            <h2>Put two winter strategies on the same accounting basis.</h2>
+          </div>
+          <p class="section-note">Year 2 premise and machine rates are editable estimates based on Year 1 options. Update them when the new rules arrive.</p>
+        </div>
+        <div class="plan-grid" id="plan-grid"></div>
+      </section>
+
+      <section class="section-shell decision-shell" id="decision">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">03 Make the decision</p>
+            <h2>See the profit, cash and downside trade-off.</h2>
+          </div>
+          <p class="section-note">The recommendation only uses the figures entered above. Change the trainer allocation to see what breaks first.</p>
+        </div>
+        <div id="comparison"></div>
+      </section>
+
+      <section class="section-shell" id="reference-check">
+        <div class="section-heading compact">
+          <div>
+            <p class="eyebrow">04 Year 1 calculation check</p>
+            <h2>The official worked season reconciles.</h2>
+          </div>
+        </div>
+        <div id="reference-example"></div>
+      </section>
+
+      <section class="section-shell assumptions-shell" id="assumptions">
+        <details>
+          <summary>
+            <span>
+              <span class="eyebrow">05 Editable Year 2 estimates</span>
+              <strong>Open premise, machine and finance assumptions</strong>
+            </span>
+            <span class="summary-action">Review estimates</span>
+          </summary>
+          <div id="estimate-editor"></div>
+        </details>
+      </section>
+    </main>
+
+    <footer>
+      <p>Built from the supplied home assignment and official Year 1 rules.</p>
+      <button class="text-button" id="reset-button" type="button">Reset the example data</button>
+    </footer>
+
+    <script type="module" src="./js/app.js"></script>
+  </body>
+</html>
